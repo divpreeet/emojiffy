@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emojify | Combine Emojis!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Emojify</h1>
+            <p>combine emoji's to create unique combinations!</p>
+        </header>
+        
+        <main>
+            <div class="emoji-selector">
+                <input type="search" id="emojiSearch" placeholder="Search emojis...">
+                <div id="categorySelector" class="category-selector"></div>
+                <div id="emojiGrid" class="emoji-grid"></div>
+            </div>
+
+            <div class="combination-container">
+                <div class="selected-emojis">
+                    <div id="emoji1Display" class="emoji-display">1</div>
+                    <div class="plus">+</div>
+                    <div id="emoji2Display" class="emoji-display">2</div>
+                </div>
+                <div class="button-group">
+                    <button id="combineButton" disabled>Combine!</button>
+                    <button id="resetButton" class="reset-button">Reset</button>
+                    <button id="randomButton">Random</button>
+                    <button id="favoriteButton" disabled>Favorite</button>
+                    <button id="exportButton" disabled>Export PNG</button>
+                </div>
+                <div id="loading" class="loading" style="display: none;">Cooking up something special... 🧪</div>
+                <div id="error" class="error" style="display: none;"></div>
+                <div id="result" class="result"></div>
+            </div>
+
+            <div class="challenge-section">
+                <h2>Try to make these!</h2>
+                <div id="challengeEmojis"></div>
+                <button id="newChallengeButton">New Challenge</button>
+            </div>
+
+            <div class="history-section">
+                <h2>Recent Combinations</h2>
+                <div id="history" class="history"></div>
+            </div>
+
+            <div class="favorites-section">
+                <h2>Favorite Combinations</h2>
+                <div id="favorites" class="favorites"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>made by <a href="https:github.com/divpreeet">divpreet</a>, for <a href="https://highseas.hackclub.com">highseas</a></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
