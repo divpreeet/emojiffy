@@ -23,6 +23,6 @@ emojify is a web app that allows users to combine different emojis to create uni
 
 ## Try it out
 
-[Emojify](emojify.boredom.dev)
+[Emojify](https://emojify.boredom.dev)
 
 
